@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: basic-ci-cd
-        image: phutawan1906/myapp:latest
+        image: phutawan1906/myapp:a09e99db6a357128efbe41df103380f2f7d5adc9
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8000
