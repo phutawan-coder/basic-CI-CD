@@ -30,7 +30,8 @@ jobs:
         context: .
         push: true
         platforms: linux/amd64, linux/arm64
-        tags: phutawan1906/myapp:${ github.sha }
+        tags: phutawan1906/myapp:${{ github.sha }}
+        
     - name: Update K8s image tag
       run: |
         sed -i "s|image: .*|image: phutawan1906/myapp:${{ github.sha }}|" k8s/deployment.yaml
