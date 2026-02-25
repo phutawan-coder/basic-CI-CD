@@ -12,7 +12,7 @@ spec:
       maxSurge: 1
 
   selector:
-    matchLables:
+    matchLabels:
       app: basic-ci-cd
   
   template:
