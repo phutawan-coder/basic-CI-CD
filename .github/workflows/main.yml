@@ -34,7 +34,7 @@ jobs:
         
     - name: Update K8s image tag
       run: |
-        sed -i "s|image: .*|image: phutawan1906/myapp:${{ github.sha }}|" k8s/deployment.yaml
+        sed -i "s|image: .*|image: phutawan1906/myapp:${{ github.sha }}|" k8s/deployment.yml
         git config --global user.name "github-actions"
         git config --global user.email "actions@github.com"
         git add k8s/deployment.yaml
